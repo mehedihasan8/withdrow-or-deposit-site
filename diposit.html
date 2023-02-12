@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diposit</title>
+    <!-- tailwind file -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-sky-200">
+    <header>
+      <h1 class="lg:text-5xl text-3xl font-semibold text-center mt-7">
+        Well Come to your
+        <span class="font-bold text-pink-700">Father-in-low acccound</span>
+      </h1>
+    </header>
+
+    <main class="w-9/12 mx-auto mt-12">
+      <section class="grid lg:grid-cols-3 gap-4">
+        <!--
+            deposit section 
+        -->
+        <div class="bg-red-500 rounded-lg">
+          <h2 class="px-6 pt-6 text-4xl mb-3 text-white font-semibold">
+            Deposit
+          </h2>
+          <p class="px-6 pb-6 text-4xl text-white font-medium">
+            $<span id="change-deposit">00</span>
+          </p>
+        </div>
+        <!--
+            withdraw section 
+        -->
+        <div class="bg-sky-400 rounded-lg">
+          <h2 class="px-6 pt-6 text-4xl mb-3 text-white font-semibold">
+            Windrow
+          </h2>
+          <p class="px-6 pb-6 text-4xl text-white font-medium">
+            $<span id="change-withdrow">00</span>
+          </p>
+        </div>
+        <!--  
+            Balance  section 
+        -->
+        <div class="bg-fuchsia-500 rounded-lg">
+          <h2 class="px-6 pt-6 text-4xl mb-3 text-white font-semibold">
+            Balance
+          </h2>
+          <p class="px-6 pb-6 text-4xl text-white font-medium">
+            $<span id="Balance-deposit">1240</span>
+          </p>
+        </div>
+      </section>
+      <section class="grid lg:grid-cols-2 mt-9 gap-8">
+        <!--
+         please deposit section 
+        -->
+        <div class="bg-cyan-400 p-8 rounded-lg">
+          <h1 class="text-4xl font-medium">Please Deposit</h1>
+          <input
+            type="email"
+            class="mt-6 px-4 py-2 w-5/6 block rounded-lg"
+            name=""
+            id="deposit-field"
+            placeholder="$ Amonunt you want Deposit"
+          />
+          <button
+            class="bg-red-500 rounded-md hover:bg-green-600 mt-5 text-white font-medium px-8 py-2"
+            id="btn-deposit"
+          >
+            Deposit
+          </button>
+        </div>
+        <!--
+        please withdrow section 
+        -->
+        <div class="bg-slate-500 p-8 rounded-lg">
+          <h1 class="text-4xl text-white font-medium">Please Withdrow</h1>
+          <input
+            type="email"
+            class="mt-6 px-4 py-2 w-5/6 block rounded-lg"
+            name=""
+            id="withdrow-field"
+            placeholder="$ Amonunt you want withdrow"
+          />
+          <button
+            class="bg-blue-700 rounded-md hover:bg-green-600 mt-5 text-white font-medium px-6 py-2"
+            id="btn-withdrow"
+          >
+            withdrow
+          </button>
+        </div>
+      </section>
+    </main>
+    <!-- js file here  -->
+    <script src="js/diposit.js"></script>
+  </body>
+</html>
